@@ -53,7 +53,8 @@ model = pickle.load(open("GBoost_Diabetes.pkl", "rb"))
 
 if st.button("Get Prediction!"):
     data_check = []
-    if type(age) == int:
+
+    if type(age) is int:
         data_check.append(True)
     else:
         data_check.append(False)
